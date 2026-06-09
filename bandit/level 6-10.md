@@ -39,13 +39,13 @@ password - dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 # Level 8->9
 ## Learned
-- `uniq` filters adjacent duplicate lines in a file.
+- `uniq` compares only adjacent duplicate lines, so sorting is required first to group duplicates.
  - `-u` displays only lines that appear exactly once.
  - Since `uniq` only works on adjacent lines, `sort` is used first to group duplicates together.
  - The pipe `|` passes the output of `sort` as input to `uniq`.
 ## Commands
 ```bash 
-sort data.thx | uniq -u
+sort data.txt | uniq -u
 ```
 password - 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
