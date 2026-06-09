@@ -16,7 +16,7 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ls
 cat readme 
 ```
-
+---
 # level 1->2
 ## Learned
 - Dash - is treated specially by many commands, often interpreted as a flag or standard input, not a literal filename. 
@@ -25,7 +25,7 @@ cat readme
 ```bash 
 cat ./- 
 ```
-
+---
 # level 2->3
 ## Learned
 - spaces are used as argument separators, filenames with spaces in it requires quoting,
@@ -34,7 +34,7 @@ cat ./-
 ```bash 
 cat ./"--spaces in this filename--" 
 ```
-
+---
 # level 3->4
 ## Learned
 - using ls -a to see hidden files/folders
@@ -44,7 +44,7 @@ cat ./"--spaces in this filename--"
 ls -a
 cat ./...Hiding-From-You 
 ```
-
+---
 # level 4->5
 ## Learned
 - using file to see what kind of data is inside the file
