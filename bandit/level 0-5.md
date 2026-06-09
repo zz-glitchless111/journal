@@ -1,4 +1,4 @@
-#level 0
+# level 0
 ## Learned
 Connect to a remote machine using SSH
 ## command used
@@ -10,7 +10,8 @@ Using ls to check for files in current directory
 using cat to read files
 entering a new bandit level by copying the password for it, exitting ssh session and logging in to the next bandit level
 rightclick to paste in cmd
-##command used
+
+## command used
 ls
 cat readme
 ctrl+d(exit), ctrl+v(copy) and rightclick(paste) 
