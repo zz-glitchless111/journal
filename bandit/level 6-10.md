@@ -25,27 +25,37 @@ cat /var/lib/dpkg/info/bandit7.password
 password - morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 ---
 
-# Level 5->6
+# Level 7->8
 ## Learned
+- `grep` is used to find a word inside a file
 ## Commands
 ```bash 
-test
+grep "millionth" data.txt
 ```
+password - dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 ---
 
-# Level 5->6
+# Level 8->9
 ## Learned
+- `uniq` filters adjacent duplicate lines in a file.
+ - `-u` displays only lines that appear exactly once.
+ - Since `uniq` only works on adjacent lines, `sort` is used first to group duplicates together.
+ - The pipe `|` passes the output of `sort` as input to `uniq`.
 ## Commands
 ```bash 
-test
+sort data.thx | uniq -u
 ```
+password - 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 ---
 
-# Level 5->6
+# Level 9->10
 ## Learned
+- `strings` is used to only extract readable human "strings" from the file
+ - `grep` is then used to find the pattern "="
 ## Commands
 ```bash 
-test
+strings data.txt | grep "="
 ```
+password - FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 ---
 
