@@ -23,6 +23,7 @@ find / -size 33c -user bandit7 -group bandit6 2>/dev/null
 cat /var/lib/dpkg/info/bandit7.password
 ```
 password - morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
 ---
 
 # Level 7->8
@@ -33,6 +34,7 @@ password - morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 grep "millionth" data.txt
 ```
 password - dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
 ---
 
 # Level 8->9
@@ -46,6 +48,7 @@ password - dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 sort data.thx | uniq -u
 ```
 password - 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
 ---
 
 # Level 9->10
@@ -57,5 +60,6 @@ password - 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 strings data.txt | grep "="
 ```
 password - FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
 ---
 
