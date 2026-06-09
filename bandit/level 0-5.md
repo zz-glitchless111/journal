@@ -15,7 +15,7 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```bash
 ls
 cat readme 
-```
+``` 
 ---
 # level 1->2
 ## Learned
