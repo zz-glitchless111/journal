@@ -9,39 +9,38 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 - Using ls to check for files in current directory
 - using cat to read files
 - entering a new bandit level by copying the password for it, exitting ssh session and logging in to the next bandit level
-- rightclick to paste in cmd
 
-## command used
-- ls
-- cat readme
-- ctrl+d(exit), ctrl+v(copy) and rightclick(paste) 
-
+## Commands
+```bash
+ls
+cat readme 
+```
 # level 1->2
-## learned
-- Dash - treated specially by commands, often interpreted as a flag or standard input, not a literal filename. 
+## Learned
+- Dash - is treated specially by many commands, often interpreted as a flag or standard input, not a literal filename. 
 - This ./ means current directory and can be used to read these files that starts with -
-## command used
+## Commands
 - cat ./-
 
 # level 2->3
-## learned
-- spaces between words is considered as the argument separator, files with filenames with spaces in it requires quoting,
+## Learned
+- spaces are used as argument separators, filenames with spaces in it requires quoting,
     " " around it in order to be read
-## command used
+## Commands
 - cat ./"--spaces in this filename--"
 
 # level 3->4
-## learned
+## Learned
 - using ls -a to see hidden files/folders
 - -a means all
-## command used
+## Commands
 - ls -a
 - cat ./...Hiding-From-You
 
 # level 4->5
-## learned
+## Learned
 - using file to see what kind of data is inside the file
 - using * to run a command on all files in the directory
-## command
+## Commands
 - file ./*
 - cat ./-file07
