@@ -27,12 +27,13 @@ password - 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 - decompressing a repeatedly compressed file.
   - file was compressed using gunzip, bunzip2 and tar
     - gzip to compress files using gzip, gunzip to decompress gzip files
-    - bzip2 to compress files using bzip2, gunzip2 to decompress bzip2 files
+    - bzip2 to compress files using bzip2, bunzip2 to decompress bzip2 files
     - tar -cf to compress files using tar, tar -xf to decompress tar files.
+- Always use `file` after every step to determine the next decompression method.
 - `~/` means home directory
 - `>` directs output into a file
-- `xdd` tool to convert binary to hexdump, vice versa
-  - `-r` reverse mode, converts hexdump to machine-readable binary
+- `xxd` tool to convert binary to hex representation, vice versa
+  - `-r` reverse mode, converts hex rep to machine-readable binary
 - 
 ## Commands
 ```bash
@@ -50,7 +51,7 @@ file data
 mv data data.gz
 gunzip data.gz
 file data
-tar -xf file
+tar -xf data
 ls
 file data5.bin
 tar -xf data5.bin
@@ -67,23 +68,33 @@ password - FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
 ---
 
-# Level 10->11
+# Level 13->14
 ## Learned
+- using a private key to enter an ssh session
+- transferring a file from an ssh session to local machine using `scp`
+- `scp` - secure copy
+  - `-P` to specify port instead of `-p`
+- `ssh -i` - specifies to use a private key instead for login credentials
 ## Commands
 ```bash
-test
+scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
 ```
-password - 
+password - N/A
 
 ---
 
-# Level 10->11
+# Level 14->15
 ## Learned
+- finding current ssh session password
+- connecting to specific ports using `nc`
+- `nc` used to send/receive data on a specific machine to a specific port
 ## Commands
 ```bash
-test
+cat /etc/bandit_pass/bandit14
+nc localhost 30000
 ```
-password - 
+password - 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 
 ---
 
