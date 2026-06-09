@@ -5,7 +5,7 @@
 ```bash
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
-
+---
 # level 0->1
 ## Learned
 - Using ls to check for files in current directory
@@ -22,14 +22,18 @@ cat readme
 - Dash - is treated specially by many commands, often interpreted as a flag or standard input, not a literal filename. 
 - This ./ means current directory and can be used to read these files that starts with -
 ## Commands
-```bash cat ./- ```
+```bash 
+cat ./- 
+```
 
 # level 2->3
 ## Learned
 - spaces are used as argument separators, filenames with spaces in it requires quoting,
     " " around it in order to be read
 ## Commands
-```bash cat ./"--spaces in this filename--" ```
+```bash 
+cat ./"--spaces in this filename--" 
+```
 
 # level 3->4
 ## Learned
