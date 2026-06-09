@@ -19,8 +19,8 @@ cat readme
 ---
 # level 1->2
 ## Learned
-- Dash - is treated specially by many commands, often interpreted as a flag or standard input, not a literal filename. 
-- This ./ means current directory and can be used to read these files that starts with -
+- '-' is treated specially by many commands, often interpreted as a flag or standard input, not a literal filename. 
+- './' means current directory and can be used to read these files that starts with -
 ## Commands
 ```bash 
 cat ./- 
