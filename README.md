@@ -3,13 +3,13 @@
 ##progress
 
 - [x] bandit 0
-- [ ] bandit 1
-- [ ] bandit 2
-- [ ] bandit 3
-- [ ] bandit 4
-- [ ] bandit 5
-- [ ] bandit 6
-- [ ] bandit 7
+- [x] bandit 1
+- [x] bandit 2
+- [x] bandit 3
+- [x] bandit 4
+- [x] bandit 5
+- [x] bandit 6
+- [x] bandit 7
 - [ ] bandit 8
 
 ## Goal
