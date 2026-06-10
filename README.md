@@ -1,6 +1,6 @@
 # Cybersecurity Learning jounral
 
-##progress
+## progress
 
 - [x] bandit 0
 - [x] bandit 1
