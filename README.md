@@ -6,7 +6,7 @@
 - [x] bandit 5 - 10
 - [x] bandit 10 - 15
 - [x] bandit 15 - 20
-- [ ] bandit 20 - 25
+- [x] bandit 20 - 25
 - [ ] bandit 25 - 30
 - [ ] bandit 30 - 33
 
